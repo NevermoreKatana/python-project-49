@@ -15,7 +15,7 @@ def generate_prog():
     answer_numb = random.choice(massive)
     index = massive.index(answer_numb)
     massive.pop(index)
-    massive.insert(index, '...')
+    massive.insert(index, '..')
     for i in range(len(massive)):
         s += ' ' + str(massive[i])
     return str(answer_numb), s
