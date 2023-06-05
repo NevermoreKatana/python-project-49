@@ -3,6 +3,7 @@ install:
 		poetry add prompt
 		poetry add --group dev flake8
 		poetry add SymPy
+		poetry shell
 
 
 start: 
