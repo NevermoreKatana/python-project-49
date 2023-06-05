@@ -1,5 +1,4 @@
 from brain_games import cli
-from .brain_even import parity_check_game
 
 
 def greeting():
@@ -8,8 +7,7 @@ def greeting():
 
 def main():
     greeting()
-    name = cli.welcome_user()
-    parity_check_game(name)
+    cli.welcome_user()
 
 
 if __name__ == '__main__':
