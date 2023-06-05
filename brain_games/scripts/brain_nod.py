@@ -5,7 +5,7 @@ from brain_games import cli
 from .brain_games import greeting
 
 
-def parity_check_game(name: str):
+def nod_game(name: str):
     print('Find the greatest common divisor of given numbers.')
     counter = 0
     while True:
@@ -29,7 +29,7 @@ def parity_check_game(name: str):
 def main():
     greeting()
     name = cli.welcome_user()
-    parity_check_game(name)
+    nod_game(name)
 
 
 if __name__ == '__main__':
