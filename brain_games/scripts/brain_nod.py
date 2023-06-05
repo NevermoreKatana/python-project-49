@@ -14,7 +14,6 @@ def nod_game(name: str):
             break
         number, nummber1 = random.randint(1, 50), random.randint(1, 50)
         response = str(math.gcd(number, nummber1))
-        print('response:', response)
         print(f'Question: {number} {nummber1}')
         answer = prompt.string("Your answer: ")
         if answer == response:
