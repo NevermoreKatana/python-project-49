@@ -1,5 +1,7 @@
 import random
 import prompt
+from brain_games import cli
+from .brain_games import greeting
 
 
 def parity_check_game(name: str):
@@ -21,12 +23,14 @@ def parity_check_game(name: str):
             counter += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was \
-                  '{response}'\nLet's try again, {name}!")
+'{response}'\nLet's try again, {name}!")
             counter = 0
 
 
 def main():
-    parity_check_game('Bill')
+    greeting()
+    name = cli.welcome_user()
+    parity_check_game(name)
 
 
 if __name__ == '__main__':
