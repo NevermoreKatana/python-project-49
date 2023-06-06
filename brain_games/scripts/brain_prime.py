@@ -6,7 +6,7 @@ from .brain_games import greeting
 
 
 def prime_game(name: str):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     counter = 0
     while True:
         if counter == 3:
