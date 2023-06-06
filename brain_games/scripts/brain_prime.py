@@ -2,18 +2,18 @@ import random
 import prompt
 import sympy
 from brain_games import cli
-from brain_games.brain_games import greeting
+from .brain_games import greeting
 
 
 def prime_game(name: str):
-    print('Answer "yes" if the number is prime, otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     counter = 0
     while True:
         if counter == 3:
             print(f'Congratulations, {name}!')
             break
         number = random.randint(1, 50)
-        if sympy.isprime(number):
+        if sympy.isprime(number) is True:
             response = 'yes'
         else:
             response = 'no'
@@ -23,9 +23,9 @@ def prime_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is the wrong answer ;(. Correct answer was \
+            print(f"'{answer}' is wrong answer ;(. Correct answer was \
 '{response}'\nLet's try again, {name}!")
-
+            break
 
 
 def main():
