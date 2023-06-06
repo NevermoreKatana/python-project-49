@@ -10,7 +10,7 @@ def generate_prog():
     first_number = random.randint(1, 20)
     number_of_progression = random.randint(1, 30)
     massive.append(first_number)
-    for i in range(10):
+    for i in range(9):
         massive.append(massive[i] + number_of_progression)
     answer_numb = random.choice(massive)
     index = massive.index(answer_numb)
