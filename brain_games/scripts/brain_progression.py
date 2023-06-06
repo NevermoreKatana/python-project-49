@@ -29,7 +29,7 @@ def prog_game(name: str):
             print(f'Congratulations, {name}!')
             break
         response, ask = generate_prog()
-        print(f'Question:{ask}')
+        print(f'Question: {ask}')
         answer = prompt.string("Your answer: ")
         if answer == response:
             print('Correct!')
