@@ -12,12 +12,12 @@ def prime_game(name: str):
         if counter == 3:
             print(f'Congratulations, {name}!')
             break
-        number = random.randint(1, 50)
-        if sympy.isprime(number) is True:
+        number_ask = random.randint(1, 50)
+        if sympy.isprime(number_ask) is True:
             response = 'yes'
         else:
             response = 'no'
-        print(f'Question:', + number)
+        print(f'Question: {number_ask}')
         answer = prompt.string("Your answer: ")
         if answer == response:
             print('Correct!')
