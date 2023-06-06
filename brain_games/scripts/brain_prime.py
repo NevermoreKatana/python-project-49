@@ -17,7 +17,7 @@ def prime_game(name: str):
             response = 'yes'
         else:
             response = 'no'
-        print(f'Question:' + number)
+        print(f'Question:', number)
         answer = prompt.string("Your answer: ")
         if answer == response:
             print('Correct!')
