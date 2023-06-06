@@ -13,9 +13,8 @@ def generate_prog():
     for i in range(9):
         massive.append(massive[i] + number_of_progression)
     answer_numb = random.choice(massive)
-    index = massive.index(answer_numb)
-    massive.pop(index)
-    massive.insert(index, '..')
+    index = random.choice([i for i in range(len(massive)) if massive[i] != answer_numb])
+    massive[index] = '..'
     for i in range(len(massive)):
         s += ' ' + str(massive[i])
     return str(answer_numb), s
@@ -26,8 +25,7 @@ def prog_game(name: str):
     counter = 0
     while True:
         if counter == 3:
-            print(f'Congratulations, {name}!')
-            break
+            return f'Congratulations, {name}!'
         response, ask = generate_prog()
         print(f'Question: {ask}')
         answer = prompt.string("Your answer: ")
@@ -35,15 +33,15 @@ def prog_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!")
-            break
+            return f"'{answer}' is wrong answer ;(. Correct answer was \
+'{response}'\nLet's try again, {name}!"
 
 
 def main():
     greeting()
     name = cli.welcome_user()
-    prog_game(name)
+    result = prog_game(name)
+    print(result)
 
 
 if __name__ == '__main__':
