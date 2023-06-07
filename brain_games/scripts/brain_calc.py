@@ -33,7 +33,7 @@ def calc_game(name: str):
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{eval(str(number) + operation + str(number1))}'")
             print(f"Let's try again, {name}!")
-
+            break
     print(f'Congratulations, {name}!')
 
 
