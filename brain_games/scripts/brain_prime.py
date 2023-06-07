@@ -30,11 +30,11 @@ def prime_game(name: str):
             counter += 1
         else:
             correct_answer = 'yes' if is_prime else 'no'
-            print(f"'{answer}' is the wrong answer ;(. The correct answer was '{correct_answer}'.")
+            print(f"'{answer}' is the wrong answer \
+;(. The correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
     print(f'Congratulations, {name}!')
-
 
 
 def main():
