@@ -31,7 +31,8 @@ def prog_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            return f"'{answer}' is the wrong answer ;(. The correct answer was '{response}'.\nLet's try again, {name}!"
+            return f"'{answer}' is wrong answer ;(. Correct answer was \
+'{response}'\nLet's try again, {name}!"
 
 
 def main():
