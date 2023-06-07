@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
@@ -28,7 +27,7 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
-=======
+
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
@@ -58,4 +57,3 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
->>>>>>> 22c46378b879eb7ddee917d9dc1744be5c4a7881
