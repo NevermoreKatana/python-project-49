@@ -29,7 +29,3 @@ def main():
     greeting()
     name = cli.welcome_user()
     nod_game(name)
-
-
-if __name__ == '__main__':
-    main()
