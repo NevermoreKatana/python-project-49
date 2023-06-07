@@ -1,9 +1,7 @@
 import math
 import random
-import prompt
 from brain_games import cli
 from .brain_games import greeting
-
 
 
 def nod_game(name: str):
@@ -19,10 +17,12 @@ def nod_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is the wrong answer ;(. Correct answer was '{response}'")
+            print(f"'{answer}' is the wrong answer \
+;(. Correct answer was '{response}'")
             print(f"Let's try again, {name}!")
             break
     print(f'Congratulations, {name}!')
+
 
 def main():
     greeting()
