@@ -16,25 +16,25 @@ def isprime(number: int):
 
 
 def prime_game(name: str):
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print('Answer "yes" if the given number is prime. Otherwise, answer "no".')
     counter = 0
-    while True:
-        if counter == 3:
-            print(f'Congratulations, {name}!')
-            break
+
+    while counter < 3:
         number_ask = random.randint(1, 50)
-        if isprime(number_ask) is True:
-            response = 'yes'
-        else:
-            response = 'no'
+        is_prime = isprime(number_ask)
         print(f'Question: {number_ask}')
         answer = prompt.string("Your answer: ")
-        if answer == response:
+
+        if (answer == 'yes' and is_prime) or (answer == 'no' and not is_prime):
             print('Correct!')
             counter += 1
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!")
+            correct_answer = 'yes' if is_prime else 'no'
+            print(f"'{answer}' is the wrong answer ;(. The correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            break
+    print(f'Congratulations, {name}!')
+
 
 
 def main():
