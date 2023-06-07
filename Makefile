@@ -1,8 +1,8 @@
 install:
-		poetry install
-		poetry add prompt
-		poetry add --group dev flake8
-		poetry add SymPy
+	poetry install
+	poetry add prompt
+	poetry add --group dev flake8
+	poetry add SymPy
 start: 
 	poetry run brain-games
 
