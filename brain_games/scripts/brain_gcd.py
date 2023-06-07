@@ -5,24 +5,24 @@ from brain_games import cli
 from .brain_games import greeting
 
 
+
 def nod_game(name: str):
     print('Find the greatest common divisor of given numbers.')
     counter = 0
-    while True:
-        if counter == 3:
-            print(f'Congratulations, {name}!')
-            break
-        number, nummber1 = random.randint(1, 50), random.randint(1, 50)
+    while counter < 3:
+        number = random.randint(1, 50)
+        nummber1 = random.randint(1, 50)
         response = str(math.gcd(number, nummber1))
         print(f'Question: {number} {nummber1}')
-        answer = prompt.string("Your answer: ")
+        answer = input("Your answer: ")
         if answer == response:
             print('Correct!')
             counter += 1
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!")
-
+            print(f"'{answer}' is the wrong answer ;(. Correct answer was '{response}'")
+            print(f"Let's try again, {name}!")
+            break
+    print(f'Congratulations, {name}!')
 
 def main():
     greeting()
