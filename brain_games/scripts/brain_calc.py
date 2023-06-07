@@ -1,5 +1,4 @@
 import random
-import prompt
 from brain_games import cli
 from .brain_games import greeting
 
@@ -31,7 +30,8 @@ def calc_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{eval(str(number) + operation + str(number1))}'")
+            print(f"'{answer}' is wrong answer ;(. Correct answer \
+was '{eval(str(number) + operation + str(number1))}'")
             print(f"Let's try again, {name}!")
             break
     print(f'Congratulations, {name}!')
