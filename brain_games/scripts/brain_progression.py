@@ -39,7 +39,3 @@ def main():
     name = cli.welcome_user()
     result = prog_game(name)
     print(result)
-
-
-if __name__ == '__main__':
-    main()
