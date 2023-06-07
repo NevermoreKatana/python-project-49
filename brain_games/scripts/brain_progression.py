@@ -21,9 +21,7 @@ def generate_prog():
 def prog_game(name: str):
     print('What number is missing in the progression?')
     counter = 0
-    while True:
-        if counter == 3:
-            return f'Congratulations, {name}!'
+    while counter < 3:
         response, question = generate_prog()
         print(f'Question: {question}')
         answer = prompt.string("Your answer: ")
@@ -31,8 +29,10 @@ def prog_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{response}'")
+            print(f"Let's try again, {name}!")
+    return f'Congratulations, {name}!'
+
 
 
 def main():
