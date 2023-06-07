@@ -7,23 +7,23 @@ from .brain_games import greeting
 def parity_check_game(name: str):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     counter = 0
-    while True:
-        if counter == 3:
-            print(f'Congratulations, {name}!')
-            break
+    max_attempts = 3
+    while counter < max_attempts:
         number = random.randint(1, 50)
         if number % 2 == 0:
             response = 'yes'
         else:
             response = 'no'
         print(f'Question: {number}')
-        answer = prompt.string("Your answer: ")
+        answer = input("Your answer: ").lower()
         if answer == response:
             print('Correct!')
             counter += 1
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!")
+            print(f"'{answer}' is the wrong answer ;(. The correct answer was '{response}'")
+            print(f"Let's try again, {name}!")
+            break
+    print(f'Congratulations, {name}!')
 
 
 def main():
