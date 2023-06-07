@@ -26,15 +26,11 @@ def calc_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            return f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!"
+            return print(f"'{answer}' is wrong answer ;(. Correct answer was \
+'{response}'\nLet's try again, {name}!")
 
 
 def main():
     greeting()
     name = cli.welcome_user()
     calc_game(name)
-
-
-if __name__ == '__main__':
-    main()
