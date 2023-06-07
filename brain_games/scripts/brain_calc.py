@@ -35,7 +35,3 @@ def main():
     greeting()
     name = cli.welcome_user()
     calc_game(name)
-
-
-if __name__ == '__main__':
-    main()
