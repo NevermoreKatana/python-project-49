@@ -33,9 +33,8 @@ def prime_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!")
-            break
+            return f"'{answer}' is wrong answer ;(. Correct answer was \
+'{response}'\nLet's try again, {name}!"
 
 
 def main():
