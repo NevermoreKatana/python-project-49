@@ -31,7 +31,3 @@ def main():
     greeting()
     name = cli.welcome_user()
     parity_check_game(name)
-
-
-if __name__ == '__main__':
-    main()
