@@ -1,5 +1,4 @@
 import random
-import prompt
 from brain_games import cli
 from .brain_games import greeting
 
@@ -23,7 +22,7 @@ def prime_game(name: str):
         number_ask = random.randint(1, 50)
         is_prime = isprime(number_ask)
         print(f'Question: {number_ask}')
-        answer = prompt.string("Your answer: ")
+        answer = input("Your answer: ")
 
         if (answer == 'yes' and is_prime) or (answer == 'no' and not is_prime):
             print('Correct!')
