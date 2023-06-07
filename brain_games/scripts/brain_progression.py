@@ -29,11 +29,11 @@ def prog_game(name: str):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{response}'")
+            print(f"'{answer}' is wrong answer \
+;(. Correct answer was '{response}'")
             print(f"Let's try again, {name}!")
             break
     return f'Congratulations, {name}!'
-
 
 
 def main():
