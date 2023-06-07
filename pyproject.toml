@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
@@ -27,6 +29,38 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
+=======
+>>>>>>> c33c213086c70ed1849a7b5f7b51bc7d69346c46
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = ""
+authors = ["Katana Nevermore <crymorebch@hmail.com>"]
+readme = "README.md"
+packages = [
+  { include = "brain_games" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prompt = "^0.4.1"
+sympy = "^1.12"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
+<<<<<<< HEAD
 
 [tool.poetry]
 name = "hexlet-code"
@@ -57,3 +91,5 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
+=======
+>>>>>>> c33c213086c70ed1849a7b5f7b51bc7d69346c46
