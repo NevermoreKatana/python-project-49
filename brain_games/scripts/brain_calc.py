@@ -4,30 +4,37 @@ from brain_games import cli
 from .brain_games import greeting
 
 
+def generate_question():
+    number = random.randint(1, 50)
+    number1 = random.randint(1, 50)
+    operation = random.choice(['+', '-', '*'])
+    return number, number1, operation
+
+
+def check_answer(number, number1, operation, answer):
+    if operation == '+':
+        return number + number1 == answer
+    elif operation == '-':
+        return number - number1 == answer
+    else:
+        return number * number1 == answer
+
+
 def calc_game(name: str):
     print('What is the result of the expression?')
     counter = 0
-    while True:
-        if counter == 3:
-            print(f'Congratulations, {name}!')
-            break
-        number = random.randint(1, 50)
-        number1 = random.randint(1, 50)
-        operation = random.choice('*+-')
-        if operation == '+':
-            response = str(number + number1)
-        elif operation == '-':
-            response = str(number - number1)
-        else:
-            response = str(number * number1)
+    while counter < 3:
+        number, number1, operation = generate_question()
         print(f'Question: {number} {operation} {number1}')
-        answer = prompt.string("Your answer: ")
-        if answer == response:
+        answer = int(input("Your answer: "))
+        if check_answer(number, number1, operation, answer):
             print('Correct!')
             counter += 1
         else:
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was \
-'{response}'\nLet's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{eval(str(number) + operation + str(number1))}'")
+            print(f"Let's try again, {name}!")
+
+    print(f'Congratulations, {name}!')
 
 
 def main():
