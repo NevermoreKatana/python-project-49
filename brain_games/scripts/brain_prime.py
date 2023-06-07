@@ -32,7 +32,3 @@ def main():
     greeting()
     name = cli.welcome_user()
     prime_game(name)
-
-
-if __name__ == '__main__':
-    main()
