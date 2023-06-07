@@ -6,18 +6,18 @@ from .brain_games import greeting
 
 
 def prime_game(name: str):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     counter = 0
     while True:
         if counter == 3:
             print(f'Congratulations, {name}!')
             break
-        number = random.randint(1, 50)
-        if sympy.isprime(number) is True:
+        number_ask = random.randint(1, 50)
+        if sympy.isprime(number_ask) is True:
             response = 'yes'
         else:
             response = 'no'
-        print(f'Question: {number}')
+        print(f'Question: {number_ask}')
         answer = prompt.string("Your answer: ")
         if answer == response:
             print('Correct!')

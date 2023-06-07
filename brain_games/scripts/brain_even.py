@@ -24,6 +24,7 @@ def parity_check_game(name: str):
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was \
 '{response}'\nLet's try again, {name}!")
+            break
 
 
 def main():
