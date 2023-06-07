@@ -6,9 +6,9 @@ from .brain_games import greeting
 
 def isprime(number: int):
     k = 0
-    for i in range(2, number // 2+1):
+    for i in range(2, number // 2 + 1):
         if (number % i == 0):
-            k = k+1
+            k = k + 1
     if (k <= 0):
         return True
     else:
