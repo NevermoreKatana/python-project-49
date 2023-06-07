@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Проект "Игры разума" 
 
 
@@ -88,4 +87,4 @@ brain-prog
 [![asciicast](https://asciinema.org/a/Hp2Y5GbePcktTveSaPyxCLXOK.svg)](https://asciinema.org/a/eKs7SF06idIsbkV5dFJuJ56Hh)
 
 [![asciicast](https://asciinema.org/a/XloWgAMzZ3PAp9u4Ay1VCQvah.png)](https://asciinema.org/a/XloWgAMzZ3PAp9u4Ay1VCQvah)
->>>>>>> 22c46378b879eb7ddee917d9dc1744be5c4a7881
+
