@@ -16,7 +16,7 @@ def isprime(number: int):
 
 
 def prime_game(name: str):
-    print('Answer "yes" if the given number is prime. Otherwise, answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     counter = 0
 
     while counter < 3:
