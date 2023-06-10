@@ -7,7 +7,8 @@ from .brain_games import greeting
 def nod_game(name: str):
     print('Find the greatest common divisor of given numbers.')
     counter = 0
-    while counter < 3:
+    NUMBER_OF_ROUNDS = 3
+    while counter < NUMBER_OF_ROUNDS:
         number = random.randint(1, 50)
         nummber1 = random.randint(1, 50)
         response = str(math.gcd(number, nummber1))

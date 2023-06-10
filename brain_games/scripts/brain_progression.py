@@ -21,7 +21,8 @@ def generate_prog():
 def prog_game(name: str):
     print('What number is missing in the progression?')
     counter = 0
-    while counter < 3:
+    NUMBER_OF_ROUNDS = 3
+    while counter < NUMBER_OF_ROUNDS:
         response, question = generate_prog()
         print(f'Question: {question}')
         answer = prompt.string("Your answer: ")
