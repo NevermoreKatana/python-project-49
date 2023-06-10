@@ -11,12 +11,10 @@
 Определение простого числа
 
 
-## Installation
+## Установка игр сразу в систему
 
 ```sh
-git clone https://github.com/NevermoreKatana/python-project-49
-curl -sSL https://install.python-poetry.org | python3 - --version 1.2.0
-make install
+make package-install
 ```
 
 ## Usage
