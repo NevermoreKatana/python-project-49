@@ -14,6 +14,9 @@
 ## Установка игр сразу в систему
 
 ```sh
+make build
+```
+```sh
 make package-install
 ```
 
