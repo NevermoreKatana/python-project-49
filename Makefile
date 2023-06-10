@@ -1,8 +1,18 @@
 install:
 	poetry install
 	poetry shell
-start: 
+brain_game: 
 	poetry run brain-games
+brain_calc: 
+	poetry run brain-calc
+brain_even: 
+	poetry run brain-even 
+brain_nod:
+	poetry run brain-gcd
+brain_prime:
+	poetry run brain-prime
+brain_prog:
+	poetry run brain-progression
 
 build:
 	 poetry build
