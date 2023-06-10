@@ -1,9 +1,15 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+license = "Proprietary"
+description = "«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга."
 authors = ["Katana Nevermore <crymorebch@hmail.com>"]
 readme = "README.md"
+repository = "https://github.com/NevermoreKatana/python-project-49"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: Console"
 packages = [
   { include = "brain_games" },
 ]
@@ -18,6 +24,7 @@ flake8 = "^6.0.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+build = "package-install"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
