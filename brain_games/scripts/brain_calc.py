@@ -26,9 +26,9 @@ def calc_game(name: str):
     while counter < NUMBER_OF_ROUNDS:
         number, number1, operation = generate_question()
         print(f'Question: {number} {operation} {number1}')
-        answer = int(input("Your answer: "))
-        correct_answer = check_answer(number, number1, operation, answer)
-        if correct_answer == answer:
+        answer = input("Your answer: ")
+        correct_answer = check_answer(number, number1, operation)
+        if str(correct_answer) == answer:
             print('Correct!')
             counter += 1
         else:
