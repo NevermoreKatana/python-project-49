@@ -7,4 +7,3 @@ def main():
     greeting()
     name = cli.welcome_user()
     prog_game(name)
-
