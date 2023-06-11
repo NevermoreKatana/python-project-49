@@ -36,34 +36,34 @@ brain-prog
 
 ## Древо проекта
 
-.
 ├── Makefile
 ├── README.md
 ├── brain_games
-│   ├── __init__.py
-│   ├── cli.py
-│   ├── common
-│   │   ├── __init__.py
-│   │   ├── logic.py
-│   │   └── utils.py
-│   ├── games
-│   │   ├── __init__.py
-│   │   ├── calc.py
-│   │   ├── even.py
-│   │   ├── gcd.py
-│   │   ├── prime.py
-│   │   └── progression.py
-│   └── scripts
-│       ├── __init__.py
-│       ├── brain_calc.py
-│       ├── brain_even.py
-│       ├── brain_games.py
-│       ├── brain_gcd.py
-│       ├── brain_prime.py
-│       └── brain_progression.py
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── common
+│   │   ├── __init__.py
+│   │   ├── logic.py
+│   │   └── utils.py
+│   ├── games
+│   │   ├── __init__.py
+│   │   ├── calc.py
+│   │   ├── even.py
+│   │   ├── gcd.py
+│   │   ├── prime.py
+│   │   └── progression.py
+│   └── scripts
+│       ├── __init__.py
+│       ├── brain_calc.py
+│       ├── brain_even.py
+│       ├── brain_games.py
+│       ├── brain_gcd.py
+│       ├── brain_prime.py
+│       └── brain_progression.py
 ├── poetry.lock
 ├── pyproject.toml
 └── setup.cfg
+
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/NevermoreKatana/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/NevermoreKatana/python-project-49/actions)
