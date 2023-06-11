@@ -1,11 +1,7 @@
-from brain_games import cli
-from .brain_games import greeting
-from brain_games.common.logic import play_game_two_numbers
-from brain_games.games.calc import generate_question, check_answer
+from ..common.utils import start_game_two_nums
+from ..games.calc import check_answer, generate_question
 
 
 def main():
     TITLE = 'What is the result of the expression?'
-    greeting()
-    name = cli.welcome_user()
-    play_game_two_numbers(name, TITLE, check_answer, generate_question)
+    start_game_two_nums(TITLE, check_answer, generate_question)
