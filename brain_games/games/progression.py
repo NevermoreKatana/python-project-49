@@ -23,6 +23,7 @@ def prog_game(name: str):
     while counter < NUMBER_OF_ROUNDS:
         response, question = generate_prog()
         print(f'Question: {question}')
+        print(response)
         answer = prompt.string("Your answer: ")
         if answer == response:
             print('Correct!')
@@ -32,4 +33,4 @@ def prog_game(name: str):
 ;(. Correct answer was '{response}'")
             print(f"Let's try again, {name}!")
             break
-    return f'Congratulations, {name}!'
+    return print(f'Congratulations, {name}!')
