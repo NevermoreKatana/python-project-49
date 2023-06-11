@@ -24,7 +24,8 @@ def play_game(name, game_title, is_correct):
 The correct answer was '{correct_answer(response)}'")
             print(f"Let's try again, {name}!")
             break
-    print(f'Congratulations, {name}!')
+    if counter == 3:
+        print(f'Congratulations, {name}!')
 
 
 def play_game_two_numbers(name, game_title, is_correct, quest):
