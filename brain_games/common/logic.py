@@ -20,8 +20,8 @@ def play_game(name, game_title, is_correct):
             print('Correct!')
             counter += 1
         else:
-            print(f"'{answer}' is the wrong answer.\
-The correct answer was '{correct_answer(response)}'")
+            print(f"'{answer}' is the wrong answer ;(.\
+Correct answer was '{correct_answer(response)}'")
             print(f"Let's try again, {name}!")
             break
     if counter == 3:
