@@ -11,7 +11,7 @@ def generate_prog():
     progression.append(FIRST_NUMBER)
     for _ in range(9):
         progression.append(progression[-1] + NUMBER_OF_PROGRESSION)
-    HIDDEN_INDEX = random.randint(0, 9)
+    HIDDEN_INDEX = random.randint(0, NUMBER_OF_PROGRESSION - 1)
     answer = progression[HIDDEN_INDEX]
     progression[HIDDEN_INDEX] = '..'
     question = ' '.join(str(num) for num in progression)
