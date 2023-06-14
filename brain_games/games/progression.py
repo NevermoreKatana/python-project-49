@@ -1,5 +1,7 @@
 import random
-import prompt
+
+
+TITLE = 'What number is missing in the progression?'
 
 
 def generate_prog():
@@ -16,20 +18,7 @@ def generate_prog():
     return str(answer), question
 
 
-def prog_game(name: str):
-    print('What number is missing in the progression?')
-    counter = 0
-    NUMBER_OF_ROUNDS = 3
-    while counter < NUMBER_OF_ROUNDS:
-        response, question = generate_prog()
-        print(f'Question: {question}')
-        answer = prompt.string("Your answer: ")
-        if answer == response:
-            print('Correct!')
-            counter += 1
-        else:
-            print(f"'{answer}' is wrong answer \
-;(. Correct answer was '{response}'")
-            print(f"Let's try again, {name}!")
-            break
-    return print(f'Congratulations, {name}!')
+def generate_question():
+    response, quest = generate_prog()
+    question = f'Question: {quest}'
+    return response, question

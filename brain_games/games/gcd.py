@@ -1,23 +1,12 @@
 import math
 import random
 
+TITLE = 'Find the greatest common divisor of given numbers.'
 
-def nod_game(name: str):
-    print('Find the greatest common divisor of given numbers.')
-    counter = 0
-    NUMBER_OF_ROUNDS = 3
-    while counter < NUMBER_OF_ROUNDS:
-        number = random.randint(1, 50)
-        nummber1 = random.randint(1, 50)
-        response = str(math.gcd(number, nummber1))
-        print(f'Question: {number} {nummber1}')
-        answer = input("Your answer: ")
-        if answer == response:
-            print('Correct!')
-            counter += 1
-        else:
-            print(f"'{answer}' is the wrong answer \
-;(. Correct answer was '{response}'")
-            print(f"Let's try again, {name}!")
-            break
-    print(f'Congratulations, {name}!')
+
+def generate_question():
+    FIRST_NUMBER_FOR_GAME = random.randint(1, 50)
+    SECOND_NUMBER_FOR_GAME = random.randint(1, 50)
+    response = math.gcd(FIRST_NUMBER_FOR_GAME, SECOND_NUMBER_FOR_GAME)
+    question = f'Question: {FIRST_NUMBER_FOR_GAME} {SECOND_NUMBER_FOR_GAME}'
+    return response, question

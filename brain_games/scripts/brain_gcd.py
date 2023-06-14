@@ -1,9 +1,6 @@
-from brain_games import cli
-from brain_games.scripts.brain_games import greeting
-from brain_games.games.gcd import nod_game
+from brain_games.common.utils import start_game
+from brain_games.games.gcd import TITLE, generate_question
 
 
 def main():
-    greeting()
-    name = cli.welcome_user()
-    nod_game(name)
+    start_game(TITLE, generate_question)
