@@ -10,13 +10,12 @@ def correct_answer(response):
     return 'no'
 
 
-def play_game(name, game_title, is_correct):
+def play_game(name, game_title, func_gen_question):
     print(game_title)
     counter = 0
     while counter < NUMBER_OF_ROUNDS:
-        FIRST_NUMBER_FOR_GAME = random.randint(1, 50)
-        response = is_correct(FIRST_NUMBER_FOR_GAME)
-        print(f'Question: {FIRST_NUMBER_FOR_GAME}')
+        response, question = func_gen_question()
+        print(question)
         answer = input("Your answer: ").lower()
         if (answer == 'yes' and response) or (answer == 'no' and not response):
             print('Correct!')
@@ -40,7 +39,7 @@ def play_game_two_numbers(name, game_title, is_correct, quest):
         response = is_correct(FIRST_NUMBER_FOR_GAME,
                               SECOND_NUMBER_FOR_GAME, question)
         print(f'Question: {FIRST_NUMBER_FOR_GAME}\
-{question} {SECOND_NUMBER_FOR_GAME}')
+ {question} {SECOND_NUMBER_FOR_GAME}')
         answer = input("Your answer: ").lower()
         if str(response) == answer:
             print('Correct!')

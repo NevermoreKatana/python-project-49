@@ -1,6 +1,6 @@
 from brain_games.common.utils import start_game
-from brain_games.games.even import is_even, TITLE
+from brain_games.games.even import TITLE, generate_question
 
 
 def main():
-    start_game(TITLE, is_even)
+    start_game(TITLE,generate_question)

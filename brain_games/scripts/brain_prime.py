@@ -1,6 +1,6 @@
 from brain_games.common.utils import start_game
-from brain_games.games.prime import is_prime, TITLE
+from brain_games.games.prime import TITLE, generate_question
 
 
 def main():
-    start_game(TITLE, is_prime)
+    start_game(TITLE, generate_question)
