@@ -1,7 +1,7 @@
 install:
 	poetry install
 	poetry shell
-brain_game: 
+brain_game:
 	poetry run brain-games
 brain_calc: 
 	poetry run brain-calc
