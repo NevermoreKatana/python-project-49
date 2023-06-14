@@ -1,3 +1,6 @@
+TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime(number: int):
     k = 0
     for i in range(2, number // 2 + 1):

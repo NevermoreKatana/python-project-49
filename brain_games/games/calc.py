@@ -1,5 +1,7 @@
 import random
 
+TITLE = 'What is the result of the expression?'
+
 
 def generate_question():
     operation = random.choice(['+', '-', '*'])
