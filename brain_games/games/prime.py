@@ -17,7 +17,6 @@ def is_prime(number: int):
 
 def generate_question():
     NUMBER_FOR_GAME = random.randint(1, 50)
-    response =  is_prime(NUMBER_FOR_GAME)
+    response = is_prime(NUMBER_FOR_GAME)
     question = f'Question: {NUMBER_FOR_GAME}'
     return response, question
-

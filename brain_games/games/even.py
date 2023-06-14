@@ -10,6 +10,7 @@ def is_even(number: int) -> bool:
     else:
         return False
 
+
 def generate_question():
     NUMBER_FOR_GAME = random.randint(1, 50)
     response = is_even(NUMBER_FOR_GAME)

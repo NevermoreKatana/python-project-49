@@ -3,4 +3,4 @@ from brain_games.games.even import TITLE, generate_question
 
 
 def main():
-    start_game(TITLE,generate_question)
+    start_game(TITLE, generate_question)
