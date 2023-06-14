@@ -22,7 +22,7 @@ def play_game(name, game_title, func_gen_question):
             counter += 1
         else:
             print(f"'{answer}' is the wrong answer ;(.\
-Correct answer was '{correct_answer(response)}'")
+ Correct answer was '{correct_answer(response)}'")
             print(f"Let's try again, {name}!")
             break
     if counter == 3:
