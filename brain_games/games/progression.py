@@ -6,14 +6,14 @@ TITLE = 'What number is missing in the progression?'
 
 def generate_prog():
     progression = []
-    first_number = random.randint(1, 20)
-    number_of_progression = random.randint(1, 30)
-    progression.append(first_number)
+    FIRST_NUMBER = random.randint(1, 20)
+    NUMBER_OF_PROGRESSION = random.randint(1, 30)
+    progression.append(FIRST_NUMBER)
     for _ in range(9):
-        progression.append(progression[-1] + number_of_progression)
-    hidden_index = random.randint(0, 9)
-    answer = progression[hidden_index]
-    progression[hidden_index] = '..'
+        progression.append(progression[-1] + NUMBER_OF_PROGRESSION)
+    HIDDEN_INDEX = random.randint(0, 9)
+    answer = progression[HIDDEN_INDEX]
+    progression[HIDDEN_INDEX] = '..'
     question = ' '.join(str(num) for num in progression)
     return str(answer), question
 
