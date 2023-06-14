@@ -1,6 +1,5 @@
 import random
 
-
 TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 

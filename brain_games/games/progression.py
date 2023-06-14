@@ -1,6 +1,5 @@
 import random
 
-
 TITLE = 'What number is missing in the progression?'
 
 
