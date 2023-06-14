@@ -37,8 +37,10 @@ def play_game_two_numbers(name, game_title, is_correct, quest):
         question = quest()
         FIRST_NUMBER_FOR_GAME = random.randint(1, 50)
         SECOND_NUMBER_FOR_GAME = random.randint(1, 50)
-        response = is_correct(FIRST_NUMBER_FOR_GAME, SECOND_NUMBER_FOR_GAME, question)
-        print(f'Question: {FIRST_NUMBER_FOR_GAME} {question} {SECOND_NUMBER_FOR_GAME}')
+        response = is_correct(FIRST_NUMBER_FOR_GAME,
+                              SECOND_NUMBER_FOR_GAME, question)
+        print(f'Question: {FIRST_NUMBER_FOR_GAME}\
+{question} {SECOND_NUMBER_FOR_GAME}')
         answer = input("Your answer: ").lower()
         if str(response) == answer:
             print('Correct!')
