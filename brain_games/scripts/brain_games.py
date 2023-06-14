@@ -1,4 +1,4 @@
-from brain_games import cli
+from brain_games.cli import welcome_user
 
 
 def greeting():
@@ -7,4 +7,5 @@ def greeting():
 
 def main():
     greeting()
-    cli.welcome_user()
+    name = welcome_user()
+    return name

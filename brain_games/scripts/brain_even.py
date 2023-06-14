@@ -1,5 +1,5 @@
-from ..common.utils import start_game
-from ..games.even import is_even
+from brain_games.common.utils import start_game
+from brain_games.games.even import is_even
 
 
 def main():

@@ -1,5 +1,5 @@
-from ..common.utils import start_game_two_nums
-from ..games.calc import check_answer, generate_question
+from brain_games.common.utils import start_game_two_nums
+from brain_games.games.calc import check_answer, generate_question
 
 
 def main():
