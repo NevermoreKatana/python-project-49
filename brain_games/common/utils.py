@@ -1,6 +1,6 @@
 from brain_games import cli
 from brain_games.scripts.brain_games import greeting
-from brain_games.common.logic import play_game, play_game_two_numbers
+from brain_games.common.logic import play_game
 
 
 def initialize_game():
@@ -12,8 +12,3 @@ def initialize_game():
 def start_game(title: str, func):
     name = initialize_game()
     play_game(name, title, func)
-
-
-def start_game_two_nums(title: str, func, func1):
-    name = initialize_game()
-    play_game_two_numbers(name, title, func, func1)
