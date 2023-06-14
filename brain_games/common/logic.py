@@ -20,6 +20,9 @@ def play_game(name, game_title, func_gen_question):
         if (answer == 'yes' and response) or (answer == 'no' and not response):
             print('Correct!')
             counter += 1
+        elif (answer == str(response)):
+            print('Correct!')
+            counter += 1
         else:
             print(f"'{answer}' is the wrong answer ;(.\
  Correct answer was '{correct_answer(response)}'")
