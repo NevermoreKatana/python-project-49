@@ -7,4 +7,4 @@ def greeting():
 
 def main():
     greeting()
-    name = welcome_user()
+    welcome_user()
