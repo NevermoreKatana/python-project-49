@@ -6,8 +6,7 @@ def correct_answer(response):
         return response
     if response:
         return 'yes'
-    else:
-        return 'no'
+    return 'no'
 
 
 def play_game(name, game_title, func_gen_question):

@@ -20,7 +20,7 @@ def create_expression():
     progression = generate_prog(first_number, step_of_progression,
                                 LONG_PROGRESSION)
     hidden_index = random.randint(0, LONG_PROGRESSION - 1)
+    response = progression[hidden_index]
     progression[hidden_index] = '..'
-    response = str(progression[hidden_index])
     question = f"Question: {' '.join(str(num) for num in progression)}"
     return response, question
