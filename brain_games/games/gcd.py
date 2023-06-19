@@ -2,11 +2,12 @@ import math
 import random
 
 TITLE = 'Find the greatest common divisor of given numbers.'
-
+MIN_NUMBER = 1
+MAX_NUMBER = 50
 
 def generate_question():
-    FIRST_NUMBER_FOR_GAME = random.randint(1, 50)
-    SECOND_NUMBER_FOR_GAME = random.randint(1, 50)
-    response = math.gcd(FIRST_NUMBER_FOR_GAME, SECOND_NUMBER_FOR_GAME)
-    question = f'Question: {FIRST_NUMBER_FOR_GAME} {SECOND_NUMBER_FOR_GAME}'
+    first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    second_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    response = math.gcd(first_number, second_number)
+    question = f'Question: {first_number} {second_number}'
     return response, question

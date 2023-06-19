@@ -1,7 +1,8 @@
 import random
 
 TITLE = 'What is the result of the expression?'
-
+MIN_NUMBER = 1
+MAX_NUMBER = 50
 
 def answer(number, number1, operation):
     if operation == '+':
@@ -13,11 +14,11 @@ def answer(number, number1, operation):
 
 
 def generate_question():
-    FIRST_NUMBER_FOR_GAME = random.randint(1, 50)
-    SECOND_NUMBER_FOR_GAME = random.randint(1, 50)
+    first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    second_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     operation = random.choice(['+', '-', '*'])
-    question = f'Question: {FIRST_NUMBER_FOR_GAME}\
- {operation} {SECOND_NUMBER_FOR_GAME}'
-    response = answer(FIRST_NUMBER_FOR_GAME,
-                      SECOND_NUMBER_FOR_GAME, operation)
+    question = f'Question: {first_number}\
+ {operation} {second_number}'
+    response = answer(first_number,
+                      second_number, operation)
     return response, question
