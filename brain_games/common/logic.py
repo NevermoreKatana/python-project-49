@@ -7,12 +7,11 @@ def play_game(name, game_title, func_gen_question):
         response, question = func_gen_question()
         print(question)
         answer = input("Your answer: ").lower()
-        if (answer == 'yes' and response) or (answer == 'no' and not response)\
-                or (answer == response):
+        if (answer == response):
             print('Correct!')
         else:
             print(f"'{answer}' is the wrong answer ;(. "
-                  f"Correct answer was '{'yes' if response else 'no'}'")
+                  f"Correct answer was '{response}'")
             print(f"Let's try again, {name}!")
             break
     else:
