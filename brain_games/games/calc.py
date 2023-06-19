@@ -21,4 +21,4 @@ def create_expression():
  {operation} {second_number}'
     response = calculate_result(first_number,
                                 second_number, operation)
-    return response, question
+    return str(response), question

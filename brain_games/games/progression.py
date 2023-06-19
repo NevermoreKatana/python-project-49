@@ -23,4 +23,4 @@ def create_expression():
     response = progression[hidden_index]
     progression[hidden_index] = '..'
     question = f"Question: {' '.join(str(num) for num in progression)}"
-    return response, question
+    return str(response), question

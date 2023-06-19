@@ -11,4 +11,4 @@ def create_expression():
     second_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     response = math.gcd(first_number, second_number)
     question = f'Question: {first_number} {second_number}'
-    return response, question
+    return str(response), question

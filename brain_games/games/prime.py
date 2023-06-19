@@ -19,4 +19,4 @@ def create_expression():
     number_for_game = random.randint(MIN_NUMBER, MAX_NUMBER)
     response = is_prime(number_for_game)
     question = f'Question: {number_for_game}'
-    return response, question
+    return str(response), question
