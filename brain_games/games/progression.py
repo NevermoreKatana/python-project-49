@@ -6,21 +6,21 @@ MIN_NUMBER = 1
 MAX_NUMBER = 20
 
 
-def generate_prog():
+def generate_prog(f_num, step, long):
     progression = []
-    first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    step_of_progression = random.randint(MIN_NUMBER, MAX_NUMBER)
-    progression.append(first_number)
-    for _ in range(LONG_PROGRESSION):
-        progression.append(progression[-1] + step_of_progression)
-    HIDDEN_INDEX = random.randint(0, LONG_PROGRESSION - 1)
-    answer = progression[HIDDEN_INDEX]
-    progression[HIDDEN_INDEX] = '..'
-    question = ' '.join(str(num) for num in progression)
-    return str(answer), question
+    progression.append(f_num)
+    for _ in range(long):
+        progression.append(progression[-1] + step)
+    return progression
 
 
 def create_expression():
-    response, quest = generate_prog()
-    question = f'Question: {quest}'
+    first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    step_of_progression = random.randint(MIN_NUMBER, MAX_NUMBER)
+    progression = generate_prog(first_number, step_of_progression,
+                                LONG_PROGRESSION)
+    hidden_index = random.randint(0, LONG_PROGRESSION - 1)
+    progression[hidden_index] = '..'
+    response = str(progression[hidden_index])
+    question = f"Question: {' '.join(str(num) for num in progression)}"
     return response, question
