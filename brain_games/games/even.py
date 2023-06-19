@@ -12,7 +12,7 @@ def is_even(number: int) -> bool:
         return False
 
 
-def generate_question():
+def create_expression():
     number_for_game = random.randint(MIN_NUMBER, MAX_NUMBER)
     response = is_even(number_for_game)
     question = f'Question: {number_for_game}'

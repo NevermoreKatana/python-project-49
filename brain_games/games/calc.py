@@ -5,7 +5,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 50
 
 
-def answer(number, number1, operation):
+def calculate_result(number, number1, operation):
     if operation == '+':
         return number + number1
     elif operation == '-':
@@ -14,12 +14,12 @@ def answer(number, number1, operation):
         return number * number1
 
 
-def generate_question():
+def create_expression():
     first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     second_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     operation = random.choice(['+', '-', '*'])
     question = f'Question: {first_number}\
  {operation} {second_number}'
-    response = answer(first_number,
-                      second_number, operation)
+    response = calculate_result(first_number,
+                                second_number, operation)
     return response, question

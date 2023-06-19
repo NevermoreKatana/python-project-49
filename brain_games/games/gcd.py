@@ -6,7 +6,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 50
 
 
-def generate_question():
+def create_expression():
     first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     second_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     response = math.gcd(first_number, second_number)

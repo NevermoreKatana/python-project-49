@@ -1,6 +1,6 @@
 from brain_games.common.utils import start_game
-from brain_games.games.calc import generate_question, TITLE
+from brain_games.games.calc import create_expression, TITLE
 
 
 def main():
-    start_game(TITLE, generate_question)
+    start_game(TITLE, create_expression)

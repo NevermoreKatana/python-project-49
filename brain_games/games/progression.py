@@ -20,7 +20,7 @@ def generate_prog():
     return str(answer), question
 
 
-def generate_question():
+def create_expression():
     response, quest = generate_prog()
     question = f'Question: {quest}'
     return response, question

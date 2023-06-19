@@ -16,7 +16,7 @@ def is_prime(number: int):
         return False
 
 
-def generate_question():
+def create_expression():
     number_for_game = random.randint(MIN_NUMBER, MAX_NUMBER)
     response = is_prime(number_for_game)
     question = f'Question: {number_for_game}'
