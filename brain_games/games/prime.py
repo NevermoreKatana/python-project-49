@@ -4,6 +4,7 @@ TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_NUMBER = 1
 MAX_NUMBER = 50
 
+
 def is_prime(number: int):
     k = 0
     for i in range(2, number // 2 + 1):

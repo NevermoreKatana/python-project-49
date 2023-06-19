@@ -5,6 +5,7 @@ TITLE = 'What number is missing in the progression?'
 MIN_NUMBER = 1
 MAX_NUMBER = 20
 
+
 def generate_prog():
     progression = []
     first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
