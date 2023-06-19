@@ -12,8 +12,7 @@ def is_prime(number: int):
             k = k + 1
     if (k <= 0):
         return True
-    else:
-        return False
+    return False
 
 
 def create_expression():

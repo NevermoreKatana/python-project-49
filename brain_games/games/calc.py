@@ -10,8 +10,7 @@ def calculate_result(number, number1, operation):
         return number + number1
     elif operation == '-':
         return number - number1
-    else:
-        return number * number1
+    return number * number1
 
 
 def create_expression():
