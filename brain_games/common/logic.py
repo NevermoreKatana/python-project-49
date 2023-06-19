@@ -9,9 +9,10 @@ def play_game(name, game_title, func_gen_question):
         answer = input("Your answer: ").lower()
         if (answer == response):
             print('Correct!')
-        print(f"'{answer}' is the wrong answer ;(. "
-              f"Correct answer was '{response}'")
-        print(f"Let's try again, {name}!")
-        break
+        else:
+            print(f"'{answer}' is the wrong answer ;(. "
+                  f"Correct answer was '{response}'")
+            print(f"Let's try again, {name}!")
+            break
     else:
         print(f'Congratulations, {name}!')
