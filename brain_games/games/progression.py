@@ -6,9 +6,9 @@ MIN_NUMBER = 1
 MAX_NUMBER = 20
 
 
-def generate_prog(f_num, step, long):
+def generate_prog(first_number, step, long):
     progression = []
-    progression.append(f_num)
+    progression.append(first_number)
     for _ in range(long):
         progression.append(progression[-1] + step)
     return progression
