@@ -1,7 +1,7 @@
 import math
 import random
 
-TITLE = 'Find the greatest common divisor of given numbers.'
+TITLE = 'Find the greatest game_utilities divisor of given numbers.'
 MIN_NUMBER = 1
 MAX_NUMBER = 50
 
