@@ -1,5 +1,15 @@
+from brain_games.scripts.brain_games import greeting
 from brain_games.game_utilities.games_functional import play_game
+import prompt
 
 
-def start_game(name: str, title: str, func):
+def initialize_game():
+    greeting()
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!")
+    return name
+
+
+def start_game(title: str, func):
+    name = initialize_game()
     play_game(name, title, func)
