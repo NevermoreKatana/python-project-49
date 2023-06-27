@@ -7,6 +7,8 @@ MAX_NUMBER = 50
 
 def is_prime(number: int):
     k = 0
+    if number < 2:
+        return True
     for i in range(2, number // 2 + 1):
         if (number % i == 0):
             k = k + 1
