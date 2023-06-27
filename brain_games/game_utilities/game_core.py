@@ -1,5 +1,5 @@
 from brain_games.scripts.brain_games import greeting
-from brain_games.game_utilities.games_functional import play_game
+from brain_games.game_utilities.games_engine import play_game
 import prompt
 
 
